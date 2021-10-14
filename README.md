@@ -1,9 +1,10 @@
 # dcbell-python-plus
 ![image](https://user-images.githubusercontent.com/88251502/137381241-12a5f0df-7b11-4afe-99b2-9bfad56c0e8f.png)
 
-디시인사이드(dcinside) 갤러리의 지정된 키워드가 포함된 글, 댓글을 실시간으로 알려주는 스크립트
+디시인사이드(dcinside) 갤러리의 지정된 키워드가 포함된 글, 댓글을 실시간으 텔레그램 채널봇을 통해 알려주는 스크립트
 
-스크립트 테스트 링크: https://dcbell-test.pbjdev.repl.run/
+기존 코드: https://github.com/pdjdev/dcbell-python   
+(새 글 알림이 필요한 경우 위 리포지토리를 참고하세요)
 
 ## 사용 방법
 
