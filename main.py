@@ -170,7 +170,7 @@ while(1):
                                 else:
                                     telmsg += "새 '" + kw + "' 키워드 댓글"
 
-                                telmsg += "*\n" + title + " - " + name + ip + "\n" + "[글 링크](" + urllib.parse.quote(postlink) + ")"
+                                telmsg += "*\n" + title.replace(kw,'_'+kw+'_') + " - " + name + ip + "\n" + "[글 링크](" + urllib.parse.quote(postlink) + ")"
 
                                 print(sendTelegramMsg(TelAPI, TelChan, telmsg))
                                 print ("│보내기 완료")
