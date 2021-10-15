@@ -72,14 +72,16 @@ updTime = 300 # 업데이트 주기 (초)
 
 # ========================================================================
 
-
-
 # 시간 표시 형식
 tType = "%Y-%m-%d %H-%M-%S"
 print ("========DCBELL 설정 값========")
 print ("Telegram 채널ID: " + TelChan)
 print ("업데이트 간격: " + str(updTime) + "초")
 print ("==============================")
+
+# 전송 기록 리스트 (중복전송 방지용)
+post_hist = []
+comm_hist = []
 
 
 while(1):
@@ -160,6 +162,10 @@ while(1):
                             # 처음에는 보내지않기 (재가동때 알림이 중복으로 가지 않도록)
                             if prev_postnum == 0:
                                 print('│(최초 요청이므로 푸시를 보내지 않습니다)')
+
+                            elif ((i==0 and postnum in post_hist) or (i==1 and postnum in comm_hist)):
+                                print('│(이미 보낸 요청이므로 푸시를 보내지 않습니다)')
+                                
                             else:
                                 print ("│푸시 보내는 중...")
 
