@@ -190,7 +190,7 @@ while(1):
                             print("제외 닉네임이므로 무시합니다.", name)
 
                 if keywords[kw][i] == 0:
-                    print('최초 검색 결과가 없습니다. 검색되면 알림을 보냅니다.')
+                    print('검색 결과가 없습니다. 검색되면 알림을 보냅니다.')
                     keywords[kw][i] = -1
 
 
