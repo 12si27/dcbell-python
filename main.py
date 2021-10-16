@@ -162,7 +162,6 @@ while(1):
                             # 처음에는 보내지않기 (재가동때 알림이 중복으로 가지 않도록)
                             if prev_postnum == 0:
                                 print('│(최초 요청이므로 푸시를 보내지 않습니다)')
-                                keywords[kw][i] = -1
 
                             elif ((i==0 and postnum in post_hist) or (i==1 and postnum in comm_hist)):
                                 print('│(이미 보낸 요청이므로 푸시를 보내지 않습니다)')
@@ -183,6 +182,7 @@ while(1):
                                 print ("│보내기 완료")
                             
                             keywords[kw][i] = postnum
+                                
                             print ("===========작업 끝=============\n")
                             break
 
